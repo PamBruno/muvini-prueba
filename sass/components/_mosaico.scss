@@ -1,0 +1,306 @@
+
+
+.ri-grid{
+	margin: 30px auto 30px;
+	position: relative;
+	height: auto;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+	display: table;
+}
+
+.ri-grid ul:after {
+	clear: both;
+}
+
+.ri-grid ul {
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #fff;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+
+}
+
+
+.ri-grid ul li a:hover:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.45);
+	// border: 1px solid white;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+
+
+
+.mosaico {
+	@extend .z-depth-5;
+
+}
+
+// modal mosaico  /////////////////////////////////
+
+
+.btn {
+	&.mosaico{
+		cursor: pointer;
+		border-radius: 20px;
+		margin-top: 0.5rem;
+		font-weight: 400;
+	}
+	
+}
+
+.mosaico-modal {
+	display: none;
+	overflow: scroll;
+	position: fixed;
+	width: 1px;
+	height: 1px;
+	top: 0;
+	left: 0;	
+	
+}
+
+.mosaico-modal:target {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(255,255,255,0.9);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	z-index: 201;
+	
+}
+
+.mosaico-close {
+	background: color("purple" , "darken-4");
+	color : white;
+	position: absolute;
+	top:30px;
+	right:0;
+	border-radius: 20px 0 0 20px;
+	display: block;
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	@extend .z-depth-1;
+
+	/*border: 1px solid red;*/
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+	cursor: pointer;
+	z-index: 103;
+	opacity: 1;
+	.material-icons {
+		font-size: 30px ;
+		line-height: 40px !important;
+
+
+	}
+}
+
+
+.mosaico-close:hover{
+	opacity: 0.8;
+}
+
+
+.container-mosaico {
+
+	width: 90%;
+	// border: 1px solid red;
+	position: relative;
+	height: auto;
+	margin: auto;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content:space-around;
+	-webkit-align-items: center;
+	-webkit-align-content: center;
+}
+
+.mosaico-autor{
+	max-width: 500px;
+	padding: 3em;
+	margin: auto;
+	position: relative;
+	// border: 1px solid red;
+}
+
+
+.mosaico-autor h2 {
+	font-family: 'Alfa Slab One', cursive ;
+	text-transform: uppercase;
+	color: color("blue-grey", "darken-3");
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.mosaico-autor h2 + h3 {
+	text-transform: capitalize;
+	// font-style: italic;
+	font-weight: 400;
+	font-size: 1em;
+	color: color("teal", "accent-4");
+	
+	margin-top:-0.5em ;
+}
+
+.mosaico-autor h3 {
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid color("teal", "accent-4");
+}
+
+.mosaico-autor p {
+	color: #666;
+	font-weight: 400;
+}
+
+
+.mosaico-imagen  {
+	margin: auto;
+	position: relative;
+	// border: 1px solid red;
+
+}
+
+.mosaico-imagen img {
+	max-height: 80vh;
+	max-width: 40vw;
+	display: block;
+	margin: 10vh auto;
+	@extend .z-depth-5;
+}

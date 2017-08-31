@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
+/* Alegreya */
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i');
+/* Fira Sans */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i');
+//  indice
+
+// 1. variables y colores muvini 
+// 2. TITULO UD + FOTO AUTOR
+
+//  Variables
+
+$primario-muvini: 		#00adaf;
+$secundario-muvini: 	#fbe269;
+$rosado-muvini: 	#f55272;
+$violeta-muvini: 	#180a3a;
+
+
+.bg-primario-muvini{
+	background: $primario-muvini;
+}
+.text-primario-muvini {
+	color: $primario-muvini;
+}
+
+.bg-secundario-muvini{
+	background: $secundario-muvini;
+}
+.text-secundario-muvini {
+	color: $secundario-muvini;
+}
+
+.bg-violeta-muvini{
+	background: $violeta-muvini;
+	&:hover,
+	&:active,
+	&:focus {
+		background: #2b1268;
+	}
+}
+.text-violeta-muvini {
+	color: $violeta-muvini;
+}
+
+
+.bg-rosado-muvini{
+	background: $rosado-muvini;
+}
+.text-rosado-muvini {
+	color: $rosado-muvini;
+}
+
+
+
+body {
+	background: #484848;
+}
+
+
+//  TITULO UD + FOTO AUTOR
+
+.title {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	position: relative;
+	padding: 20px 50px;
+	width: 90% !important;
+	margin: 50px 20px 0 0 ;
+	background: #212121;
+	border-radius: 8px;
+	z-index: 7;
+	.icon-ud {
+		min-width: 100px;
+		min-height: 100px;
+		width: 80%;
+		position: relative;
+		margin: auto;
+		display: block;
+		border-radius: 50%;
+		@extend .z-depth-4;
+		img {
+			width: 100%;
+		}
+		.miniatura {
+			width: 50%;
+			position: absolute;
+			right: -10%;
+			bottom: -10%;
+			border: 3px solid $primario-muvini ;
+
+		}
+	}
+	.title-ud {
+		width: 100%;
+		height: auto;
+		position: relative;
+		h1 {
+			color: $secundario-muvini;
+			font-weight: 900;
+			font-size: 25px ;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			text-align: center;
+		}
+	}	
+}
+.title:before {
+	content: "";
+	width: 100%;
+	height: 10px;
+	border-radius: 8px 8px 0 0 ;
+	position: absolute;
+	top: -10px;
+	background: rgba(#212121, .6);
+	left: 0;
+	transform: scale(.97);
+	-webkit-transform: scale(.97);
+	-ms-transform: scale(.97);
+	z-index: -10;
+}
+
+
+
+
+//  AUTOR FIXED - - - - - EN LATERAL DERECHO
+
+.autor {
+	position: fixed;
+	top: 20%;
+	left: 6%;
+	max-width: 220px;
+	text-align: center;
+	box-sizing: content-box;
+	z-index: 6;
+	opacity: 0;
+	-webkit-transition: 0.3s ease-in-out all;
+	transition: 0.3s ease-in-out all;
+	&.active {
+		opacity: 1;
+	}
+	.bg {
+		padding: 20px;
+		background: #212121;
+		border-radius: 8px;
+	}
+
+	img {
+		width: 50%;
+	}
+	h5 {
+		color: $primario-muvini;
+		font-size: 18px;
+		font-weight: 300;
+
+	}
+	h6 {
+		color: #b4b4b4;
+		padding:  10px 0;
+		display: block;
+		position: relative;
+		margin-bottom: 30px;
+		font-weight: 300;
+
+		&:after {
+			content: "";
+			width: 60px;
+			height: 1px;
+			top: 0px;
+			background: #b4b4b4;
+			left: calc( 50% - 30px);
+			position: absolute;
+		}
+
+	}
+}
+
+.autor:before {
+	@extend .title:before;
+}
+
+.btn {
+	border-radius: 20px;
+}
+
+
+
+// ANTERIOR Y SIGUIENTE UD
+
+.guia {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #212121;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	@extend .z-depth-5;
+	z-index: 8;
+	opacity: 0;
+	-webkit-transition: 0.3s ease-in-out all;
+	transition: 0.3s ease-in-out all;
+	&.active {
+		opacity: 1;
+	}
+	a {
+		display: inline-block;
+	}
+
+}
+
+
+//  BOX
+
+.box,
+.box-mapa {
+	position: relative;
+	padding: 50px 80px !important;
+	width: 100%;
+	margin: 50px 0;
+	background: #fff;
+	border-radius: 8px;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	z-index: 5;
+	h2 {
+		color: $rosado-muvini;
+		font-weight: 700;
+		font-size: 30px;
+		padding:  20px 0 15px 0;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.gallery-img {
+		display: block;
+		width: 70%;
+		min-width: 400px;
+		border-radius: 8px;
+		@extend .z-depth-2;
+		margin: 50px auto;
+	}
+
+	ol {
+		margin: 0;
+		padding-left: 20px;
+	}
+
+	ol > li{
+		padding: 0 15px;
+		cursor: pointer;
+		margin-top: 15px;
+	}
+
+	p, li, span {
+		font-family: 'Merriweather', georgia, Sans-serif;
+		font-weight: 300;
+		font-size: 21px !important;
+		color: $violeta-muvini !important;
+		line-height: 35px;
+	}
+
+	a {
+		color: $primario-muvini;
+		text-decoration: underline;
+	}
+
+	strong {
+		font-weight: 700;
+	}
+
+	blockquote {
+		font-family: 'Merriweather', georgia, Sans-serif;
+		font-style: italic;
+		position: relative;
+		background-color: #fafafa;
+		font-weight: 300;
+		padding: 10px 33px;
+		// font-size: 28px;
+		width: 90%;
+		border: none;
+		border-left: 4px solid $secundario-muvini;
+		margin: 30px auto;
+		p > span {
+			cursor: pointer;
+			background-color: rgba(251,226,105, 0.2);
+			&:hover {
+				background-color: rgba(251,226,105, 1);
+			}
+		}
+
+	}
+
+
+}
+
+.box.back {
+	transform: scale(.95);
+	-webkit-transform: scale(.95);
+	-ms-transform: scale(.95);
+	top: -20px;
+	opacity: .3;
+	z-index: -1;
+
+}
+
+.box:before,
+.box-mapa:before {
+	content: "";
+	width: 100%;
+	height: 10px;
+	border-radius: 8px 8px 0 0 ;
+	position: absolute;
+	top: -10px;
+	background: rgba(255, 255, 255, .6);
+	left: 0;
+	transform: scale(.97);
+	-webkit-transform: scale(.97);
+	-ms-transform: scale(.97);
+	z-index: -10;
+}
+
+.box-mapa {
+	padding: 50px 50px!important;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	
+}
+
+// // 
+
+// .image-tabs {
+// 	width: 250px;
+// 	height: auto;
+// 	position: absolute;
+// 	top:50px;
+// 	left: -125px;
+// 	// border: 1px solid red;
+// }
+// .image-tabs img {
+// 	position: relative;
+// 	max-width: 250px;
+// 	width: 100%;
+// 	@extend .z-depth-4;
+
+// }
+
+// .close-tabs {
+// 	position: absolute;
+// 	right: 25px;
+// 	top: -25px;
+// }
+
+
+
+// .artista {
+// 	height: 100vh;
+// 	position: fixed;
+// 	border: 1px solid red;	
+// }
+
+// .datos__artista {
+// 	padding: 2em;
+// 	text-align: right;
+// }
+
+// .mapa__ud {
+// 	width: 200px;
+// 	height: 300px;
+// 	position: relative;
+// 	text-align: center;
+// 	// background: white;
+// 	img {
+// 		width: 100%;
+// 		height: 200px;
+// 	}
+// }
+
+.card-mapa {
+	width: 200px;
+	cursor: pointer;
+	&:hover {
+		@extend .z-depth-5;
+	}
+	.card-content {
+		height: 80px;
+		line-height: 80px;
+		.card-title{
+			@extend .center-align;
+			font-size: 1.1em;;
+			font-family: "Roboto", sans-serif;
+			font-weight: 400;
+			line-height:1.2em;
+			color: white;
+
+		}
+	}
+}
+
+//  lista de artistas
+
+tbody {
+	color: color('grey' , 'darken-3');
+	font-weight: 300;
+	padding: 0 10px;
+	td {
+		width: 25%;
+	}
+	td.name {
+		font-weight: 700;
+		min-width: 150px;
+	}
+	.img-lista {
+		width: 50px;
+		height: 50px;
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
+	th {
+		border-bottom: none !important;
+		h6{
+			font-weight: 900;
+			color: white;
+			font-size: 2em !important;
+			margin: auto;
+			width: 60px;
+			height: 60px;
+			line-height:  60px;
+			text-align: center;
+			background: color('teal' , 'accent-3') !important;
+		}
+	}
+
+}
+
+
+
+
+iframe {
+	z-index: 10;
+}
+
+
