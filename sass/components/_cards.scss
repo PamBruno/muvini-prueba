@@ -129,18 +129,18 @@
     }
 
     .card-title {
-      // color: $card-bg-color;
-      // position: absolute;
-      // bottom: 0;
-      // left: 0;
-      // max-width: 100%;
-      // padding: $card-padding;
+      color: $card-bg-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      padding: $card-padding;
     }
   }
 
   .card-content {
     padding: $card-padding;
-    // border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
 
     p {
       margin: 0;

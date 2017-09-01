@@ -1992,8 +1992,7 @@ a {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2, .box .gallery-img,
-.box-mapa .gallery-img {
+.z-depth-2, .box .gallery-img {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
 .z-depth-3 {
@@ -2512,6 +2511,26 @@ nav ul a span.badge {
   margin-top: calc(24px - 11px); }
 
 /* This is needed for some mobile phones to display the Google Icon font properly */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v13/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2"); }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
 .material-icons {
   text-rendering: optimizeLegibility;
   font-feature-settings: 'liga'; }
@@ -3467,8 +3486,16 @@ small {
       top: 0;
       bottom: 0;
       width: 100%; }
+    .card .card-image .card-title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      padding: 24px; }
   .card .card-content {
-    padding: 24px; }
+    padding: 24px;
+    border-radius: 0 0 2px 2px; }
     .card .card-content p {
       margin: 0;
       color: inherit; }
@@ -6681,6 +6708,19 @@ body {
   background: #212121;
   border-radius: 8px;
   z-index: 7; }
+  .title:before, .autor:before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    top: -10px;
+    background: rgba(33, 33, 33, 0.6);
+    left: 0;
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    z-index: -10; }
   .title .icon-ud {
     min-width: 100px;
     min-height: 100px;
@@ -6708,20 +6748,6 @@ body {
       text-transform: uppercase;
       letter-spacing: -1px;
       text-align: center; }
-
-.title:before, .autor:before {
-  content: "";
-  width: 100%;
-  height: 10px;
-  border-radius: 8px 8px 0 0;
-  position: absolute;
-  top: -10px;
-  background: rgba(33, 33, 33, 0.6);
-  left: 0;
-  transform: scale(0.97);
-  -webkit-transform: scale(0.97);
-  -ms-transform: scale(0.97);
-  z-index: -10; }
 
 .autor {
   position: fixed;
@@ -6786,8 +6812,7 @@ body {
   .guia a {
     display: inline-block; }
 
-.box,
-.box-mapa {
+.box {
   position: relative;
   padding: 50px 80px !important;
   width: 100%;
@@ -6798,64 +6823,54 @@ body {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   z-index: 5; }
-  .box h2,
-  .box-mapa h2 {
+  .box h2 {
     color: #f55272;
     font-weight: 700;
     font-size: 30px;
     padding: 20px 0 15px 0;
     margin-bottom: 30px;
     position: relative; }
-  .box .gallery-img,
-  .box-mapa .gallery-img {
+  .box .gallery-img {
     display: block;
     width: 70%;
     min-width: 400px;
     border-radius: 8px;
     margin: 50px auto; }
-  .box ol,
-  .box-mapa ol {
+  .box ol {
     margin: 0;
     padding-left: 20px; }
-  .box ol > li,
-  .box-mapa ol > li {
+  .box ol > li {
     padding: 0 15px;
     cursor: pointer;
     margin-top: 15px; }
-  .box p, .box li, .box span,
-  .box-mapa p,
-  .box-mapa li,
-  .box-mapa span {
+  .box p, .box li, .box span {
     font-family: 'Merriweather', georgia, Sans-serif;
     font-weight: 300;
-    font-size: 21px !important;
+    font-size: 18px !important;
     color: #180a3a !important;
     line-height: 35px; }
-  .box a,
-  .box-mapa a {
+  .box a {
     color: #00adaf;
     text-decoration: underline; }
-  .box strong,
-  .box-mapa strong {
+  .box strong {
     font-weight: 700; }
-  .box blockquote,
-  .box-mapa blockquote {
+  .box blockquote {
     font-family: 'Merriweather', georgia, Sans-serif;
     font-style: italic;
     position: relative;
-    background-color: #fafafa;
+    color: #00adaf;
+    background-color: #f2f2f2;
     font-weight: 300;
-    padding: 10px 33px;
+    padding: 30px;
+    font-size: 18px;
     width: 90%;
     border: none;
-    border-left: 4px solid #fbe269;
+    border-left: 4px solid #00adaf;
     margin: 30px auto; }
-    .box blockquote p > span,
-    .box-mapa blockquote p > span {
+    .box blockquote p > span {
       cursor: pointer;
       background-color: rgba(251, 226, 105, 0.2); }
-      .box blockquote p > span:hover,
-      .box-mapa blockquote p > span:hover {
+      .box blockquote p > span:hover {
         background-color: #fbe269; }
 
 .box.back {
@@ -6867,7 +6882,7 @@ body {
   z-index: -1; }
 
 .box:before,
-.box-mapa:before {
+.box:before {
   content: "";
   width: 100%;
   height: 10px;
@@ -6881,27 +6896,31 @@ body {
   -ms-transform: scale(0.97);
   z-index: -10; }
 
-.box-mapa {
-  padding: 50px 50px !important;
+.mapa {
+  padding: 50px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center; }
 
 .card-mapa {
-  width: 200px;
+  width: 200px !important;
   cursor: pointer; }
   .card-mapa .card-content {
     height: 80px;
     line-height: 80px; }
     .card-mapa .card-content .card-title {
-      font-size: 1.1em;
+      font-size: 1.1em !important;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       line-height: 1.2em;
-      color: white; }
+      color: white !important; }
 
 tbody {
   color: #424242;
@@ -6930,9 +6949,6 @@ tbody {
       line-height: 60px;
       text-align: center;
       background: #1de9b6 !important; }
-
-iframe {
-  z-index: 10; }
 
 .ri-grid {
   margin: 30px auto 30px;
