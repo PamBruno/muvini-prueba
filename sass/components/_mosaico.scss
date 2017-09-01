@@ -42,7 +42,7 @@
 	position: relative;
 	display: block;
 	overflow: hidden;
-	background: #fff;
+	// background: #fff;
 }
 
 .ri-grid ul li a{
@@ -160,17 +160,6 @@
 
 // modal mosaico  /////////////////////////////////
 
-
-.btn {
-	&.mosaico{
-		cursor: pointer;
-		border-radius: 20px;
-		margin-top: 0.5rem;
-		font-weight: 400;
-	}
-	
-}
-
 .mosaico-modal {
 	display: none;
 	overflow: scroll;
@@ -178,7 +167,10 @@
 	width: 1px;
 	height: 1px;
 	top: 0;
-	left: 0;	
+	left: 0;
+	.btn-floating {
+		margin: 30px 30px 0 0;
+	}	
 	
 }
 
@@ -189,7 +181,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	background: rgba(255,255,255,0.9);
+	background: rgba(0,0,0,0.9);
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
@@ -197,46 +189,9 @@
 	
 }
 
-.mosaico-close {
-	background: color("purple" , "darken-4");
-	color : white;
-	position: absolute;
-	top:30px;
-	right:0;
-	border-radius: 20px 0 0 20px;
-	display: block;
-	width: 50px;
-	height: 40px;
-	text-align: center;
-	@extend .z-depth-1;
-
-	/*border: 1px solid red;*/
-	-webkit-transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-ms-transition: 0.2s linear;
-	-o-transition: 0.2s linear;
-	transition: 0.2s linear;
-	cursor: pointer;
-	z-index: 103;
-	opacity: 1;
-	.material-icons {
-		font-size: 30px ;
-		line-height: 40px !important;
-
-
-	}
-}
-
-
-.mosaico-close:hover{
-	opacity: 0.8;
-}
-
-
 .container-mosaico {
 
 	width: 90%;
-	// border: 1px solid red;
 	position: relative;
 	height: auto;
 	margin: auto;
@@ -245,7 +200,6 @@
 	display: -moz-flex;
 	display: -ms-flexbox;
 	display: flex;
-
 	-webkit-flex-flow: row wrap;
 	-webkit-justify-content:space-around;
 	-webkit-align-items: center;
@@ -262,11 +216,11 @@
 
 
 .mosaico-autor h2 {
-	font-family: 'Alfa Slab One', cursive ;
+	// font-family: 'Alfa Slab One', cursive ;
 	text-transform: uppercase;
-	color: color("blue-grey", "darken-3");
+	color: white;
 	font-size: 2em;
-	font-weight: 300;
+	font-weight: 700;
 }
 
 .mosaico-autor h2 + h3 {

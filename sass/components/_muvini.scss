@@ -15,7 +15,21 @@
 // 6. tarjetas mapa de cada artista
 // 7. lista de artistas
 
-
+@media #{$small-and-down} {
+    // styles for small screens and down
+}
+@media #{$medium-and-up} {
+    // styles for medium screens and larger
+}
+@media #{$medium-and-down} {
+    // styles for medium screens and down
+}
+@media #{$large-and-up} {
+    // styles for large screens and up
+}
+@media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+}
 
 //  Variables
 
@@ -54,12 +68,18 @@ $violeta-muvini: 		#180a3a;
 
 .bg-rosado-muvini{
 	background: $rosado-muvini;
+	&:hover,
+	&:active,
+	&:focus {
+		background: $rosado-muvini;
+	}
+	
 }
 .text-rosado-muvini {
 	color: $rosado-muvini;
 }
 
-
+// General
 
 body {
 	background: #484848;
