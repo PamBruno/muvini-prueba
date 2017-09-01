@@ -6846,7 +6846,7 @@ body {
   .box p, .box li, .box span {
     font-family: 'Merriweather', georgia, Sans-serif;
     font-weight: 300;
-    font-size: 18px !important;
+    font-size: 21px !important;
     color: #180a3a !important;
     line-height: 35px; }
   .box a {
@@ -6862,7 +6862,7 @@ body {
     background-color: #f2f2f2;
     font-weight: 300;
     padding: 30px;
-    font-size: 18px;
+    font-size: 21px;
     width: 90%;
     border: none;
     border-left: 4px solid #00adaf;
