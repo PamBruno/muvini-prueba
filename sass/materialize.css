@@ -6697,7 +6697,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #f55272; }
 
 body {
-  background: #484848; }
+  background: url(../img/bg_muvini.png) repeat top left #484848; }
 
 .title {
   display: block;

@@ -73,7 +73,7 @@ $violeta-muvini: 		#180a3a;
 	&:focus {
 		background: $rosado-muvini;
 	}
-	
+
 }
 .text-rosado-muvini {
 	color: $rosado-muvini;
@@ -82,7 +82,7 @@ $violeta-muvini: 		#180a3a;
 // General
 
 body {
-	background: #484848;
+	background: url(../img/bg_muvini.png) repeat top left #484848;
 }
 
 
