@@ -12,7 +12,7 @@
 // 3. AUTOR FIXED - - - - - EN LATERAL DERECHO
 // 4. ANTERIOR Y SIGUIENTE UD
 // 5. BOX
-// 6. tarjetas mapa de cada artista
+// 6. CONOJOS
 // 7. lista de artistas
 
 @media #{$small-and-down} {
@@ -33,10 +33,13 @@
 
 //  Variables
 
-$primario-muvini: 		#00adaf;
-$secundario-muvini: 	#fbe269;
-$rosado-muvini: 		#f55272;
-$violeta-muvini: 		#180a3a;
+$claro-muvini:			#B6E8B3;
+$semiclaro-muvini:		#84C79F;
+
+$primario-muvini: 		#3D8A75;
+
+$semioscuro-muvini:		#15524D;
+$oscuro-muvini: 		#032429;
 
 
 .bg-primario-muvini{
@@ -46,37 +49,37 @@ $violeta-muvini: 		#180a3a;
 	color: $primario-muvini;
 }
 
-.bg-secundario-muvini{
-	background: $secundario-muvini;
+.bg-semiclaro-muvini{
+	background: $semiclaro-muvini;
 }
-.text-secundario-muvini {
-	color: $secundario-muvini;
+.text-semiclaro-muvini {
+	color: $semiclaro-muvini;
 }
 
-.bg-violeta-muvini{
-	background: $violeta-muvini;
+.bg-oscuro-muvini{
+	background: $oscuro-muvini;
 	&:hover,
 	&:active,
 	&:focus {
 		background: #2b1268;
 	}
 }
-.text-violeta-muvini {
-	color: $violeta-muvini;
+.text-oscuro-muvini {
+	color: $oscuro-muvini;
 }
 
 
-.bg-rosado-muvini{
-	background: $rosado-muvini;
+.bg-claro-muvini{
+	background: $claro-muvini;
 	&:hover,
 	&:active,
 	&:focus {
-		background: $rosado-muvini;
+		background: $claro-muvini;
 	}
 
 }
-.text-rosado-muvini {
-	color: $rosado-muvini;
+.text-claro-muvini {
+	color: $claro-muvini;
 }
 
 // General
@@ -85,69 +88,104 @@ body {
 	background: url(../img/bg_muvini.png) repeat top left #484848;
 }
 
+a {
+	color: $primario-muvini;
+	// text-decoration: underline;
+}
+
+.padding-box {
+	padding: 30px;
+}
+
+.bg-content {
+	background: #181818;
+}
 
 //  TITULO UD + FOTO AUTOR
 
-.title {
-	display: block;
+.box-left{
 	position: relative;
-	box-sizing: border-box;
-	position: relative;
-	padding: 20px 50px;
-	width: 90% !important;
-	margin: 50px 20px 0 0 ;
-	background: #212121;
-	border-radius: 8px;
-	z-index: 7;
-	&:before {
-		content: "";
-		width: 100%;
-		height: 10px;
-		border-radius: 8px 8px 0 0 ;
-		position: absolute;
-		top: -10px;
-		background: rgba(#212121, .6);
-		left: 0;
-		transform: scale(.97);
-		-webkit-transform: scale(.97);
-		-ms-transform: scale(.97);
-		z-index: -10;
-	}
-	.icon-ud {
-		min-width: 100px;
-		min-height: 100px;
-		width: 80%;
-		position: relative;
-		margin: auto;
-		display: block;
-		border-radius: 50%;
-		@extend .z-depth-4;
-		img {
-			width: 100%;
+	padding: 0 10px 0 20px;
+	// width: 320px;
+
+	h2{
+		text-transform: uppercase;
+		color: white;
+		font-size: 2.2em;
+		font-weight: 700;
+		& + h3 {
+			text-transform: capitalize;
+			font-weight: 400;
+			font-size: 1.2em;
+			color: color("teal", "accent-4");
+			margin-top:-0.8em ;
 		}
-		.miniatura {
-			width: 50%;
-			position: absolute;
-			right: -10%;
-			bottom: -10%;
-			border: 3px solid $primario-muvini ;
+
+	}
+
+	h3 {
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid color("teal", "accent-4");
+
+	}
+	p {
+		color: #999;
+		font-weight: 400;
+		margin-top:-0.8em ;
+	}
+
+}
+
+.foto-autor {
+	width: 100%;
+	max-width: 300px;
+	height: 250px;
+	margin: 10px auto;
+	overflow: hidden;
+	position: relative;
+	background: $oscuro-muvini;
+	border-radius: 5px;
+	.obra {
+		width: 40%;
+		height: 100%;
+		overflow: hidden;
+		display: inline-block;
+		float: left;
+		img {
+			height: 250px;
+				// width: 100%;
+			}
 
 		}
-	}
-	.title-ud {
-		width: 100%;
-		height: auto;
-		position: relative;
-		h1 {
-			color: $secundario-muvini;
-			font-weight: 900;
-			font-size: 25px ;
-			text-transform: uppercase;
-			letter-spacing: -1px;
-			text-align: center;
+		.retrato {
+			width: 60%;
+			overflow: hidden;
+			display: inline-block;
+			float: right;
+			-webkit-box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.75);
+			box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.75);
+			img {
+				height: 250px;
+				// width: 100%;
+			}
+
 		}
-	}	
-}
+
+	}
+
+	.miniatura {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		background: $semioscuro-muvini;
+		border-radius: 50px;
+		@extend .z-depth-5;
+		bottom: 10px;
+		left: calc(40% - 40px);
+	}
+
+
 
 //  AUTOR FIXED - - - - - EN LATERAL DERECHO
 
@@ -201,42 +239,9 @@ body {
 	}
 }
 
-.autor:before {
-	@extend .title:before;
-}
 
 .btn {
-	border-radius: 20px;
-}
-
-
-
-// ANTERIOR Y SIGUIENTE UD
-
-.guia {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background: #212121;
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	@extend .z-depth-5;
-	z-index: 8;
-	opacity: 0;
-	-webkit-transition: 0.3s ease-in-out all;
-	transition: 0.3s ease-in-out all;
-	&.active {
-		opacity: 1;
-	}
-	a {
-		display: inline-block;
-	}
-
+	border-radius: 5px;
 }
 
 
@@ -244,30 +249,37 @@ body {
 
 .box {
 	position: relative;
-	padding: 50px 80px !important;
-	width: 100%;
-	margin: 50px 0;
+	float: right;
+	box-sizing: border-box;
+	width: 90%;
+	padding: 50px 80px  80px 80px!important;
+	margin: 30px 5%;
 	background: #fff;
 	border-radius: 8px;
 	transform: scale(1);
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
-	z-index: 5;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 8px;
+		border-radius: 8px 8px 0 0 ;
+		position: absolute;
+		top: -8px;
+		background: rgba(255, 255, 255, .6);
+		left: 0;
+		transform: scale(.97);
+		-webkit-transform: scale(.97);
+		-ms-transform: scale(.97);
+	}
 	h2 {
-		color: $rosado-muvini;
+		color: $semiclaro-muvini;
 		font-weight: 700;
 		font-size: 30px;
 		padding:  20px 0 15px 0;
 		margin-bottom: 30px;
 		position: relative;
-	}
-	.gallery-img {
-		display: block;
-		width: 70%;
-		min-width: 400px;
-		border-radius: 8px;
-		@extend .z-depth-2;
-		margin: 50px auto;
 	}
 
 	ol {
@@ -285,7 +297,7 @@ body {
 		font-family: 'Merriweather', georgia, Sans-serif;
 		font-weight: 300;
 		font-size: 21px !important;
-		color: $violeta-muvini !important;
+		color: $oscuro-muvini !important;
 		line-height: 35px;
 	}
 
@@ -320,38 +332,171 @@ body {
 		}
 
 	}
+	// IMAGENES EN GENERAL
+
+	img {
+		width: 100%;
+	}
+	.gallery-img { // clase para cuando hay solo una imagen
+		display: block;
+		width: 70%;
+		border-radius: 8px;
+		@extend .z-depth-2;
+		margin: 30px auto;
+	}
+
+	.group-img { // clase para cuando hay varias imagenes
+		display: -webkit-box; 
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex; 
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 100%;
+		margin: auto;
+		.item {
+
+			padding: 5px;
+			height: 140px;
+			margin: 5px;
+			width: auto;
+			box-sizing: content-box;
+			border:3px solid #f5f5f5;
+			&:hover{
+				box-shadow: 
+				0 6px 10px 0 rgba(0, 0, 0, 0.14), 
+				0 1px 18px 0 rgba(0, 0, 0, 0.12), 
+				0 3px 5px -1px rgba(0, 0, 0, 0.3);
+			}
+		}
+
+	}
+	
+	// imagen destacada o estudiada dentro de modal --> Box
+
+	.modal-img {
+		width: 70%;
+		position: relative;
+		margin: auto;
+		display: block;
+		border: 4px solid #fff;
+		border-radius: 8px;
+		@extend .z-depth-3;
+
+	}
 
 
 }
 
-.box.back {
-	transform: scale(.95);
-	-webkit-transform: scale(.95);
-	-ms-transform: scale(.95);
-	top: -20px;
-	opacity: .3;
-	z-index: -1;
 
-}
+// ANTERIOR Y SIGUIENTE UD
 
-.box:before,
-.box:before {
-	content: "";
-	width: 100%;
-	height: 10px;
-	border-radius: 8px 8px 0 0 ;
-	position: absolute;
-	top: -10px;
-	background: rgba(255, 255, 255, .6);
+.guia {
+	position: fixed;
+	bottom: 0;
 	left: 0;
-	transform: scale(.97);
-	-webkit-transform: scale(.97);
-	-ms-transform: scale(.97);
-	z-index: -10;
+	width: 100%;
+	background: #181818;
+	border-radius: 0 0 8px 8px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	@extend .z-depth-5;
+	z-index: 8;
+	opacity: 0;
+	-webkit-transition: 0.3s ease-in-out all;
+	transition: 0.3s ease-in-out all;
+	&.active {
+		opacity: 1;
+	}
+	a {
+		display: inline-block;
+	}
+
 }
 
-.mapa {
-	padding: 50px!important;
+
+// BOX PARA LA CARTOGRAFIA // EXCLUSIVO 
+
+.box-mapa {
+	position: relative;
+	width: 100%;
+	h2 {
+		color: $semiclaro-muvini;
+		font-weight: 700;
+		font-size: 30px;
+		padding:  20px 0 15px 0;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.mapa {
+		display: -webkit-box; 
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex; 
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		li {
+			display: block;
+			height: 200px;
+			width: 230px;
+			transition: all .5s;
+			&:hover {
+				@extend .z-depth-3;
+				background: $primario-muvini;
+				border-radius: 5px;
+			}
+			a{
+				display: block;
+				margin: 5px;
+				height: 200px;
+				width: 230px;
+				padding: 10px 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				img {
+					display: block;
+					width: 70%;
+				}
+				p {
+					text-align: center;
+					margin-top: 5px;
+					color: white;
+					font-size: 1.2em;
+					// font-family: 'Merriweather', georgia, Sans-serif;
+					font-weight: 300;
+
+				}
+
+			}
+		}
+		
+
+	}
+
+}
+
+// Modal
+
+
+
+
+.btn-modal {
 	display: -webkit-box; 
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -359,71 +504,91 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
-	
-}
-
-//  tarjetas mapa de cada artista
-
-.card-mapa {
-	width: 200px !important;
-	cursor: pointer;
-	&:hover {
-		@extend .z-depth-5;
-	}
-	.card-content {
-		height: 80px;
-		line-height: 80px;
-		.card-title{
-			@extend .center-align;
-			font-size: 1.1em !important;
-			font-family: "Roboto", sans-serif;
-			font-weight: 400;
-			line-height:1.2em;
-			color: white !important;
-
-		}
-	}
-}
-//  lista de artistas
-
-tbody {
-	color: color('grey' , 'darken-3');
-	font-weight: 300;
-	padding: 0 10px;
-	td {
-		width: 25%;
-	}
-	td.name {
-		font-weight: 700;
-		min-width: 150px;
-	}
-	.img-lista {
-		width: 50px;
-		height: 50px;
+	a{
 		display: block;
-		padding: 0;
-		margin: 0;
-	}
-
-	th {
-		border-bottom: none !important;
-		h6{
-			font-weight: 900;
-			color: white;
-			font-size: 2em !important;
-			margin: auto;
-			width: 60px;
-			height: 60px;
-			line-height:  60px;
-			text-align: center;
-			background: color('teal' , 'accent-3') !important;
+		margin: 5px;
+		height: 200px;
+		width: 200px;
+		padding: 10px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-decoration: none;
+		img {
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			@extend .z-depth-3;
+		}
+		span {
+			@extend .btn;
+			font-family: "Roboto", sans-serif;
+			color: white !important;
+			font-size: 1em !important;
 		}
 	}
 
 }
 
 
+ //  conejo 
+
+ .conejo-explorador {
+ 	position: fixed;
+ 	left: -30px;
+ 	bottom: 0;
+ 	z-index: 100;
+ 	width: 100%;
+ 	max-width: 200px;
+ 	height: 350px;
+ 	/* border: 1px solid red; */
+ 	overflow: hidden;
+ 	.explorador {
+ 		width: 100%;
+ 		height: auto;
+ 	}
+ }
+
+ .conejo-pintor {
+ 	position: fixed;
+ 	left: 30px;
+ 	bottom: 0;
+ 	z-index: 100;
+ 	width: 100%;
+ 	max-width: 250px;
+ 	height: 430px;
+ 	/* border: 1px solid red; */
+ 	overflow: hidden;
+ 	.pintor {
+ 		width: 100%;
+ 		height: auto;
+ 		-webkit-transform: scaleX(-1);
+ 		-moz-transform: scaleX(-1);
+ 		transform: scaleX(-1);
+ 		filter: FlipH;
+ 		-ms-filter: "FlipH";
+ 	}
+ }
+
+
+ @media #{$small-and-down} {
+    // styles for small screens and down
+}
+@media #{$medium-and-up} {
+    // styles for medium screens and larger
+}
+@media #{$medium-and-down} {
+    // styles for medium screens and down
+}
+@media #{$large-and-up} {
+    // styles for large screens and up
+}
+@media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+}
 

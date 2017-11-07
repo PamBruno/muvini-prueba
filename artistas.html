@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="sass/materialize.css">
 
 </head>
-<body class="">
+<body class="bg-content">
 
     <header>
         <!-- Dropdown Structure -->
@@ -20,664 +20,166 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <nav class="grey darken-4">
-            <a href="index.html" class="brand-logo"><img src="img/muvini-logo.png" alt="" class="responsive-img"></a>
-            <div class="container">
+            <!-- LOGO MEDIO -->
+            <a href="index.html" class="brand-logo"><img class="logo-muvini" src="img/muvini-logo.png"></a>
+            <!--  boton menu mobile -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                <i class="material-icons">menu</i>
+            </a>
+            <div class="">
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="btn pink  lighten-1"  href="artistas.html">artistas</a></li>
+                    <li><a class="btn teal"  href="artistas.html">artistas</a></li>
+                    <li><a class=""  href="educadores.html">Educadores</a></li>
                     <li><a href="mapa.html">mapa</a></li>
-                    <li><a href="agenda.html">agenda</a></li>
+                    <li><a href="carteleta.html">Cartelera</a></li>
                     <li><a class="dropdown-button" href="#" data-activates="dropdown1">muvini<i class="material-icons right">arrow_downward</i> </a></li>
-                    <!-- <li><a class="btn disabled teal accent-3"  href="artistas.html">Exposición</a></li> -->
-                    <li><a class="" href="favoritos.html"><i class="material-icons">favorite</i></a></li>
+                    <!-- <li><a class="" href="favoritos.html"><i class="material-icons">favorite</i></a></li> -->
                 </ul>
             </div>
-        </nav>
-    </header>
 
-
-    <!-- content -->
-
-    <section class="container">
-        <article class="row">
-
-            <div class="col s12 m12 l3">
-                <div class="title">
-                    <div class="icon-ud white">
-                        <img class="" src="img/icons/iconos nuevos-13.svg">
-                    </div>
-                    <div class="title-ud">
-                        <h1>Listado de Artistas</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div id="users" class="col s12 m12 l9 box">
-               <h2>Busca el Artista asignado</h2>
-
-               <div class="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input type="text" id="search" class="search">
-                <label for="search">Busca al artista asignado</label>
-
-            </div>
-            <div class="col s12">
-              <table class="responsive-table bordered">
-
-                <tbody class="list">
-                    <tr>
-                        <th  colspan="4"><h6 class="circle">A</h6></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Abreu Javier</td>
-                        <td class="born">1902 / 1985</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Acle Rosa</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Afamado Gladys</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Aguerre Enrique</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Aguerre Rómulo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Alamán Gustavo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Alíes Hugo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Alvarez Cozzi</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Anselmi Claudia</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>  
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Arden Quin</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>  
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Arostegui Ernesto</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>  
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Arzadum Carmelo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name"> Atchugarry Pablo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <!-- LETRA B -->
-                    <tr>
-                        <th  colspan="4"><h6 class="circle">B</h6></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Barcala Washington</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Barea Carlos</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Barradas Rafael</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Bassi Javier</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Battegazzore Miguel</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Beisso Ulises</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Bellini Gilberto</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Belloni José</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Bentancur Patricia</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Berdía Norberto</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Blanes Juan</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Blanes Viale</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Bresciano Miguel</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Brugnini Cecilia</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Burgos Juan</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <!-- LETRA C -->
-                    <tr>
-                        <th colspan="5"><h6 class="circle">C</h6></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cabrera Germán</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cabrera Javier Raúl</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Camnitzer Luis</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Canosa Yamandú</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Capelan Carlos</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Caraballo Jorge</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">CardilloRimer</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cardozo Eduardo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cesarco Alejandro </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Castellanos Alberto</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cibils Osvaldo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Costigliolo José Pedro</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="artistas/costigliolo/mapa.html"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cristiani Ernesto</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Cuneo José</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <!-- LETRA P -->
-                    <tr>
-                        <th colspan="4"><h6 class="circle">P</h6></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Padin Clemente </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Páez Vilaró Carlos</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Páez Vilaró Jorge</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pailós Manuel</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pallejá Miguel</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pareja Miguel Ángel</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pastor Adolfo</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">PatrInstitucional Virginia </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pavlotzky Raúl</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pemper Álvaro </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pena Antonio  </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pintos Salustiano</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Platschek Hans </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Podestá Octavio </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-
-                        <td class="name"> Prevosti Carlos </td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="img/costigliolo.png" alt="" class="img-lista circle">
-                        </td>
-                        <td class="name">Pupo Teresa</td>
-                        <td class="born">1000/2000</td>
-                        <td>
-                            <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- menu mobile -->
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="artistas.html" class="">artistas</a></li>
+                <li><a class=""  href="educadores.html">Educadores</a></li>
+                <li class="divider"></li>
+                <li><a href="carteleta.html">carteleta</a></li>
+                <li><a href="mapa.html">mapa</a></li>
+                <li class="divider"></li>
+                <li><a href="#">muvini<i class="material-icons right">arrow_downward</i> </a>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li><a href="institucional.html">Institucional</a></li>
+                        <li><a href="quienes-somos.html">quienes somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
 
         </div>
-    </article>
+    </nav>
+</header>
+<!-- content -->
+
+<section class="">
+    <article class="row">
+
+        <div class="col s12 m4 l3 box-left">
+            <h2>Listado de Artistas</h2>
+            <h3>Buscar artista asignado</h3>
+        </div>
+
+        <div id="users" class="col s12 m8 l9">
+            <div class="box">
+                
+                <div class="box-search col s12">
+
+                    <input type="text" id="search" class="search" placeholder="Buscar Artista">
+
+
+                </div>
+
+                <table class="responsive-table bordered">
+                    <tbody class="list">
+                        <tr>
+                            <td>
+                                <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                            </td>
+                            <td class="name">Costigliolo José Pedro</td>
+                            <td class="born">1000/2000</td>
+                            <td>
+                                <a class="btn-floating right" href="artistas/costigliolo/mapa.html"><i class="material-icons">arrow_forward</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                            </td>
+                            <td class="name">Cristiani Ernesto</td>
+                            <td class="born">1000/2000</td>
+                            <td>
+                                <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                            </td>
+                            <td class="name">Cuneo José</td>
+                            <td class="born">1000/2000</td>
+                            <td>
+                                <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                            </td>
+                        </tr>
+
+                        <!-- LETRA P -->
+               <!--  <tr>
+                    <th colspan="4"><h6 class="circle">P</h6></th>
+                </tr> -->
+
+                <tr>
+                    <td>
+                        <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                    </td>
+                    <td class="name">Pailós Manuel</td>
+                    <td class="born">1000/2000</td>
+                    <td>
+                        <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                    </td>
+                    <td class="name">Pallejá Miguel</td>
+                    <td class="born">1000/2000</td>
+                    <td>
+                        <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                    </td>
+                    <td class="name">Pareja Miguel Ángel</td>
+                    <td class="born">1000/2000</td>
+                    <td>
+                        <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                    </td>
+                    <td class="name">Pastor Adolfo</td>
+                    <td class="born">1000/2000</td>
+                    <td>
+                        <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/costigliolo.png" alt="" class="img-lista circle">
+                    </td>
+                    <td class="name">PatrInstitucional Virginia </td>
+                    <td class="born">1000/2000</td>
+                    <td>
+                        <a class="btn-floating right" href="#"><i class="material-icons">arrow_forward</i></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</article>
+<div class="conejo-pintor">
+    <img src="img/conejopintor.png" alt="" class="pintor">
+</div>
 </section>
 
 <!-- fin content -->
+
+
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -687,12 +189,12 @@
 <script src="js/bin/list-datos.js"></script>
 
 <script>
-    $(document).ready(function(){
-        $('.materialboxed').materialbox();
-        $(".button-collapse").sideNav();
-        $(".dropdown-button").dropdown();
-    });
-    </script>
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+    $(".button-collapse").sideNav();
+    $(".dropdown-button").dropdown();
+});
+</script>
 
 </body>
 </html>

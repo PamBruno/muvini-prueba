@@ -1,0 +1,219 @@
+
+.timeline {
+  position: relative;
+  overflow: auto;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: $primario-muvini;
+    left: 50%;
+  }
+
+
+
+// flexbox para las obras colocadas
+
+.flex {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  img {
+    width: 48%;
+    margin: 1%;
+    max-width: 320px;
+
+  }
+}
+
+// lista bloques de contenido (ul >li y divs)
+
+ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+li {
+  width: 48%;
+  &:before {
+   content: " ";
+   position: absolute;
+   border: solid transparent;
+   border-width: 15px;
+ }
+
+ &:nth-child(even) {
+  float: right;
+  margin-top: 3em;
+}
+&:nth-child(even):before {
+  border-right-color: #fff;
+  top:30px;
+  left: -30px;
+}
+&:nth-child(odd) {
+  float: left;
+}
+&:nth-child(odd):before {
+
+ border-left-color: #fff;
+ top:30px;
+ right:-30px;
+}
+
+&:nth-of-type(2n+1) {
+  clear: both;
+}
+}
+
+li,
+div {
+  background: #fff;
+  padding: 0.3em 1em 1em 1em ;
+  position: relative;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+& > div {
+  width: auto;
+  max-width: 60%;
+  margin: 1em auto;
+  & > img {
+    display: block;
+    width: 80%;
+    margin: 2em auto;
+  }
+}
+// Titulos de Fecha edad y bloques temativos (etapa, influencias y obras)
+
+h4 {
+  background: #134A46;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #fff;
+  min-width: 4em;
+  max-width: 8em;
+  margin:  auto;
+  padding: 0.6em 0;
+  text-align: center;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  border-bottom:2px solid rgba(0,0,0,0.3) ;
+  clear: both;
+}
+h3 {
+  display: block;
+  border-bottom: 1px solid #54A17B;
+  color: #54A17B;
+  font-weight: 100;
+  padding-bottom: 0.5em;
+}
+
+p, span {
+  font-family: 'Merriweather', georgia, Sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: $oscuro-muvini;
+  line-height: 35px;
+}
+
+
+}
+
+//  cierre de todo el contenido
+//  dentro de timeline
+
+.arrow_year {
+  position: relative;
+  background: $primario-muvini;
+  color: $claro-muvini;
+  text-align: center;
+  max-width: 9em;
+  padding: 0.3em 1em;
+  display: block;
+  border-radius: 4px;
+  margin: 0 auto 1em;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: $primario-muvini;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .timeline {
+    &:before{
+      left:0;
+    }
+    h4 {
+      margin-left: 2em;
+    }
+    li {
+      width: 95%;
+      margin: 2em auto;
+
+      &:nth-child(odd),
+      &:nth-child(even) {
+        float: none;
+      }
+      &:nth-child(odd):before,
+      &:nth-child(even):before {
+        content: none;
+      }
+
+    }
+    & > div {
+      max-width: 95%;
+      margin: 2em auto;
+    }
+
+  }
+
+  .arrow_year {
+    margin-left: 1em;
+    text-align: left;
+    &:after {
+     border: solid transparent;
+     content: " ";
+     height: 0;
+     width: 0;
+     position: absolute;
+     pointer-events: none;
+     border-right-color: $primario-muvini;
+     border-width: 10px;
+     margin-top: -10px;
+     left: -9px;
+     top: 50%;
+   }
+ }
+
+}
+
+

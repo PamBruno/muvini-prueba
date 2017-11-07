@@ -2,237 +2,198 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mapa</title>
+	<title>Mapa: José Pedro Costigliolo</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<link rel="stylesheet" href="../../sass/materialize.css">
 
 </head>
-<body>
+<body class="bg-content">
 	<header>
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
+			<li><a href="../../institucional.html">Institucional</a></li>
+			<li><a href="../../quienes-somos.html">Quienes somos</a></li>
 			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
+			<li><a href="../../contacto.html">Contacto</a></li>
 		</ul>
 		<nav class="grey darken-4">
-			<a href="index.html" class="brand-logo"><img src="../../img/muvini-logo.png" alt="" class="responsive-img"></a>
-			<div class="container nav-wrapper">
+			<!-- LOGO MEDIO -->
+			<a href="../../index.html" class="brand-logo"><img class="logo-muvini" src="../../img/muvini-logo.png"></a>
+			<!--  boton menu mobile -->
+			<a href="#" data-activates="mobile-demo" class="button-collapse right">
+				<i class="material-icons">menu</i>
+			</a>
+			<div class="">
 				<ul class="right hide-on-med-and-down">
-					<li><a class="btn pink  lighten-1"  href="../../artistas.html">artistas</a></li>
-					<li><a href="mapa.html">mapa</a></li>
-					<li><a href="agenda.html">agenda</a></li>
+					<li><a class="btn teal"  href="../../artistas.html">artistas</a></li>
+					<li><a class=""  href="../../educadores.html">Educadores</a></li>
+					<li><a href="../../mapa.html">mapa</a></li>
+					<li><a href="../../carteleta.html">Cartelera</a></li>
 					<li><a class="dropdown-button" href="#" data-activates="dropdown1">muvini<i class="material-icons right">arrow_downward</i> </a></li>
-					<!-- <li><a class="btn disabled teal accent-3"  href="artistas.html">Exposición</a></li> -->
-					<li><a class="" href="favoritos.html"><i class="material-icons">favorite</i></a></li>
+					<!-- <li><a class="" href="favoritos.html"><i class="material-icons">favorite</i></a></li> -->
 				</ul>
 			</div>
-		</nav>
-	</header>
-	<!-- autor fixed  -->
-	<div class="autor">
-		<div class="row bg">
-			<div class="col s12 m12 l12">
-				<img src="img/costigliolo.png" alt="" class="circle responsive-img">
-			</div>
-			<div class="col s12 m12 l12">
-				<h5>José Pedro Costigliolo</h5>
-				<h6>1902 / 1985</h6>
-				<button class="btn">Ver Mapa</button>
-			</div>
-		</div>
 
-		<div class="col s12 m12 l12">
-			<a href="" class="btn-floating grey darken-4"><i class="material-icons">thumb_up</i></a>
-			<a href="" class="btn-floating grey darken-4"><i class="material-icons">print</i></a>
-			<a href="" class="btn-floating grey darken-4"><i class="material-icons">share</i></a>
-			<a href="" class="btn-floating grey darken-4"><i class="material-icons">email</i></a>
-		</div>
-	</div>
+			<!-- menu mobile -->
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="../../artistas.html" class="">artistas</a></li>
+				<li><a class=""  href="../../educadores.html">Educadores</a></li>
+				<li class="divider"></li>
+				<li><a href="../../carteleta.html">carteleta</a></li>
+				<li><a href="../../mapa.html">mapa</a></li>
+				<li class="divider"></li>
+				<li><a href="#">muvini<i class="material-icons right">arrow_downward</i> </a>
+					<ul class="collapsible" data-collapsible="accordion">
+						<li><a href="../../institucional.html">Institucional</a></li>
+						<li><a href="../../quienes-somos.html">quienes somos</a></li>
+						<li><a href="../../contacto.html">Contacto</a></li>
+					</ul>
+				</li>
+			</ul>
 
-	<div class="container">
-		<!-- titulo unidad dinamica -->
-		<div class="row"  id="corriente-plastica">
-			<div class="col s12 m3">
-				<div class="title">
-					<div class="icon-ud white">
-						<img class="" src="img/icons/iconos nuevos-12.svg">
-						<img src="img/costigliolo.png" alt="" class="circle responsive-img miniatura">
-					</div>
-					<div class="title-ud">
-						<h1>mapa</h1>
-					</div>
+		</div>
+	</nav>
+</header>
+
+<main class="">
+	<div class="row">
+		<div class="col s12 m5 l3 box-left">
+
+			<h2>Cartografía</h2>
+			<h3>José Pedro Constigliolo</h3>
+			<p>1902-1985</p>
+
+
+			<div class="foto-autor">
+				<div class="obra">
+					<img src="images/analisis-4.png">
 				</div>
+				<div class="retrato">
+					<img src="img/retrato-costi.png">
+				</div>
+			<img src="img/icons/12.svg" alt="" class="miniatura">
 			</div>
 			
-			<div class="col s12 m9 box mapa">
-				<!-- filtro -->
 
-				<div class="card  card-mapa ">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-01.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">arrow_forward</i></a>
 
-					</div>
-					<div class="card-content bg-primario-muvini">
+
+		</div>
+
+		<div class="col s12 m7 l9 box-mapa">
+			<ul class="mapa">
+				<li>
+					<a href="obra-seleccionada.html">
+						<img class="" src="img/icons/1.svg">
 						<p class="card-title">Obra Seleccionada</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img src="img/icons/iconos nuevos-02.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">keyboard_arrow_right</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="rompecabezas.html">
+						<img class="" src="img/icons/2.svg">
 						<p class="card-title">Rompecabezas</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img src="img/icons/iconos nuevos-03.svg">
-						<a href="modelo-b.html" class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="analisis.html">
+						<img class="" src="img/icons/3.svg">
 						<p class="card-title">Análisis de la Obra</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-06.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="elementos.html">
+						<img class="" src="img/icons/6.svg">
 						<p class="card-title">Elementos de Composición</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-07.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="tecnicas.html">
+						<img class="" src="img/icons/7.svg">
 						<p class="card-title">Técnicas</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-04.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="analisis-dos.html">
+						<img class="" src="img/icons/4.svg">
 						<p class="card-title">Análisis de la Obra II</p>
-					</div>
-				</div>
-
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-11.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="cronologia.html">
+						<img class="" src="img/icons/11.svg">
 						<p class="card-title">Cronología Visual del Artista</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-15.svg">
-						<a href="modelo-a.html" class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="corrientes.html">
+						<img class="" src="img/icons/15.svg">
 						<p class="card-title">Corrientes Plasticas</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-14.svg">
-						<a href="modelo-aa.html"  class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="otros-artistas.html">
+						<img class="" src="img/icons/14.svg">
 						<p class="card-title">Otros Artistas</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-17.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
-						<p class="card-title">Ideas Centrales</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-09.svg">
-						<a href="video.html"class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="ideas-centrales.html">
+						<img class="" src="img/icons/17.svg">
+						<p class="card-title">Ideas centrales</p>
+					</a>
+				</li>
+				<li>
+					<a href="videos.html">
+						<img class="" src="img/icons/9.svg">
 						<p class="card-title">Videos</p>
-					</div>
-				</div >
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-05.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="practica.html">
+						<img class="" src="img/icons/5.svg">
 						<p class="card-title">Prácticas</p>
-					</div>
-				</div> 
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-10.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
-						<p class="card-title">Plástica</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-08.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
+					</a>
+				</li>
+				<li>
+					<a href="plastica.html">
+						<img class="" src="img/icons/10.svg">
+						<p class="card-title">A Producir!</p>
+					</a>
+				</li>
+				<li>
+					<a href="preguntas.html">
+						<img class="" src="img/icons/8.svg">
 						<p class="card-title">Preguntas</p>
-					</div>
-				</div>
-				<div class="card card-mapa">
-					<div class="card-image grey lighten-4">
-						<img class="" src="img/icons/iconos nuevos-18.svg">
-						<a class="btn-floating halfway-fab waves-effect waves-light bg-violeta-muvini"><i class="material-icons">add</i></a>
-					</div>
-					<div class="card-content bg-primario-muvini">
-						<p class="card-title">Texto para Educadores</p>
-					</div>
-				</div>
+					</a>
+				</li>
+				<li>
+					<a href="texto-grandes.html">
+						<img class="" src="img/icons/7.svg">
+						<p class="card-title">Bibliografía Extendida</p>
+					</a>
+				</li>
+	
+			</ul>
 
-			</div>
+
 
 		</div>
 
 	</div>
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/bin/materialize.min.js"></script>
 
 
-	<script>
-	$(document).ready(function() {
-		jQuery(window).scroll(function () {
-			var threshold = 700;
-			if (jQuery(window).scrollTop() >= 300)
-				$(".autor").addClass("active");
-			else
-				$(".autor").removeClass("active");
-		});
-	});
-	</script>
+</main>
+
+<div class="conejo-explorador">
+	<img src="../../img/conejoright.png" alt="" class="explorador">
+</div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/bin/materialize.min.js"></script>
+<script>
+$(".button-collapse").sideNav();
+$(".dropdown-button").dropdown();
+</script>
+
 </body>
 </html>

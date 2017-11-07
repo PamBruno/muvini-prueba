@@ -64,6 +64,7 @@ nav {
     display: inline-block;
     font-size: $navbar-brand-font-size;
     padding: 0;
+    cursor: pointer;
 
     &.center {
       left: 50%;
@@ -71,12 +72,12 @@ nav {
     }
     img {
       height: 80px; 
-      margin-left: 20px;// muvini
+      // margin-left: 20px;// muvini
     }
 
     @media #{$medium-and-down} {
-      left: 50%;
-      transform: translateX(-50%);
+      // left: 50%;
+      // transform: translateX(-50%);
 
       &.left, &.right {
         padding: 0;
@@ -114,7 +115,8 @@ nav {
 
   // Navbar Links
   ul {
-    margin: 0;
+    margin: 0 20px 0 0 ;
+
 
     li {
       transition: background-color .3s;
