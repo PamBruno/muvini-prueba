@@ -412,7 +412,6 @@ a {
 	align-items: center;
 	align-content: center;
 	@extend .z-depth-5;
-	z-index: 8;
 	opacity: 0;
 	-webkit-transition: 0.3s ease-in-out all;
 	transition: 0.3s ease-in-out all;
