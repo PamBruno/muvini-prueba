@@ -102,6 +102,8 @@ a {
 
 .bg-content {
 	background: #181818;
+	// background-image: url(../img/bg_muvini.png)top leftrepeat;
+	// background: rgba(0,0,0,0.7);
 }
 
 //  TITULO UD + FOTO AUTOR
@@ -195,50 +197,6 @@ a {
 .autor-fixed {
 	position: fixed;
 	width: 100%;
-	// top: 20%;
-	// left: 6%;
-	// box-sizing: content-box;
-	// z-index: 6;
-	// opacity: 0;
-	// -webkit-transition: 0.3s ease-in-out all;
-	// transition: 0.3s ease-in-out all;
-	// &.active {
-	// 	opacity: 1;
-	// }
-	// .bg {
-	// 	padding: 20px;
-	// 	background: #212121;
-	// 	border-radius: 8px;
-	// }
-
-	// img {
-	// 	width: 50%;
-	// }
-	// h5 {
-	// 	color: $primario-muvini;
-	// 	font-size: 18px;
-	// 	font-weight: 300;
-
-	// }
-	// h6 {
-	// 	color: #b4b4b4;
-	// 	padding:  10px 0;
-	// 	display: block;
-	// 	position: relative;
-	// 	margin-bottom: 30px;
-	// 	font-weight: 300;
-
-	// 	&:after {
-	// 		content: "";
-	// 		width: 60px;
-	// 		height: 1px;
-	// 		top: 0px;
-	// 		background: #b4b4b4;
-	// 		left: calc( 50% - 30px);
-	// 		position: absolute;
-	// 	}
-
-	// }
 }
 
 
@@ -254,7 +212,7 @@ a {
 	float: right;
 	box-sizing: border-box;
 	width: 90%;
-	padding: 50px 80px  80px 80px!important;
+	padding: 50px 80px  130px 80px!important;
 	margin: 30px 5%;
 	background: #fff;
 	border-radius: 8px;
@@ -398,30 +356,37 @@ a {
 // ANTERIOR Y SIGUIENTE UD
 
 .guia {
-	position: fixed;
-	bottom: 0;
-	left: 0;
+	position: absolute;
+	bottom:0;
+	right:0;
 	width: 100%;
-	background: #181818;
+	@extend .grey, .darken-4;
 	border-radius: 0 0 8px 8px;
 	padding: 20px;
 	display: flex;
+	margin-top: 30px;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
 	@extend .z-depth-5;
+	a {
+		display: inline-block;
+	}
+
+}
+
+.guia-fixed {
+	position: fixed;
 	opacity: 0;
+	float: right;	
+	border-radius: 0px;
 	-webkit-transition: 0.3s ease-in-out all;
 	transition: 0.3s ease-in-out all;
 	&.active {
 		opacity: 1;
 	}
-	a {
-		display: inline-block;
-	}
-
 }
 
 

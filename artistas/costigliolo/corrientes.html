@@ -58,26 +58,8 @@
 </header>
 
 <!-- autor fixed  -->
-<!-- <div class="autor hide-on-med-and-down">
-	<div class="row bg">
-		<div class="col s12 m12 l12">
-			<img src="img/costigliolo.png" alt="" class="circle responsive-img">
-		</div>
-		<div class="col s12 m12 l12">
-			<h5>José Pedro Costigliolo</h5>
-			<h6>1902 / 1985</h6>
-			<a href="mapa.html" class="btn">Ver Mapa</a>
-		</div>
-	</div>
 
-	<div class="col s12 m12 l12">
-		<a href="" class="btn-floating grey darken-4"><i class="material-icons">thumb_up</i></a>
-		<a href="" class="btn-floating grey darken-4"><i class="material-icons">print</i></a>
-		<a href="" class="btn-floating grey darken-4"><i class="material-icons">share</i></a>
-		<a href="" class="btn-floating grey darken-4"><i class="material-icons">email</i></a>
-	</div>
-</div> -->
-<main class="">
+<main>
 	<div class="row">
 		<div class="col s12 m5 l3 box-left">
 
@@ -132,16 +114,16 @@
 				<blockquote>
 					<p><strong>Propuesta:</strong> Realiza en una hoja tu propio dibujo cumpliendo con las reglas del Arte Concreto, luego toma una foto de tu trabajo y enviala a nuestro correo <a href="mailto:trabajos@muvini.com">trabajos@muvini.com</a> y comenzá a formar parte de <a href="#">nuestra galería</a> virtual.</p>
 				</blockquote>
+				<div class="guia">
+					<a class="" href="#"><i class="material-icons left">arrow_back</i> Cronología Visual del Artista</a>
+					<a href="#corriente-plastica" class="btn-floating"><i class="material-icons">arrow_upward</i></a>
+
+					<a class="" href="#"><i class="material-icons right">arrow_forward</i>Otros Artistas</a>
+				</div>
 
 
 
 			</div> <!-- </box> -->
-			<div class="col s12 m7 l9 guia">
-				<a class="" href="#"><i class="material-icons left">arrow_back</i> Cronología Visual del Artista</a>
-				<a href="#corriente-plastica" class="btn-floating"><i class="material-icons">arrow_upward</i></a>
-
-				<a class="" href="#"><i class="material-icons right">arrow_forward</i>Otros Artistas</a>
-			</div>
 
 		</div>
 
@@ -162,17 +144,6 @@ $(document).ready(function() {
 			$(".autor").addClass("active");
 		else
 			$(".autor").removeClass("active");
-	});
-});
-</script>
-<script>
-$(document).ready(function() {
-	jQuery(window).scroll(function () {
-		var threshold = 700;
-		if (jQuery(window).scrollTop() >= 1000)
-			$(".guia").addClass("active");
-		else
-			$(".guia").removeClass("active");
 	});
 });
 </script>

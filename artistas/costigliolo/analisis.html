@@ -62,7 +62,7 @@
 	<div class="col s12 m5 l3 box-left">
 
 		
-		<h2>Técnicas</h2>
+		<h2>Análisis de la Obra I</h2>
 		<h3>José Pedro Constigliolo</h3>
 		<p>1902-1985</p>
 
@@ -92,7 +92,7 @@
 		<div class="col s12 m5 l3">
 			<div class="box-left hide-on-med-and-up">
 				<!-- datos de UD y autor perteneciente para pantallas pequeñas -->
-				<h2>Técnicas</h2>
+				<h2>Análisis de la Obra I</h2>
 				<h3>José Pedro Constigliolo</h3>
 				<p>1902-1985</p>
 
@@ -167,15 +167,16 @@
 				<blockquote>
 					Los cambios de posición dan la sensación de movimiento. La posición diagonal, a diferencia de la horizontal o vertical, acentúa ese efecto. El movimiento genera cambios, los colores refuerzan esa idea de cambio.
 				</blockquote>
-			</div><!--  </box> -->
-			<div class="col s12 m7 l9 guia">
+				<div class="guia">
+				<!-- guia que orienta al usuario para seguir la linealidad de las UD -->
+
 				<a class="" href="#"><i class="material-icons left">arrow_back</i>Rompecabezas</a>
 				<a href="#corriente-plastica" class="btn-floating"><i class="material-icons">arrow_upward</i></a>
 
 				<a class="" href="#"><i class="material-icons right">arrow_forward</i>Elementos de Composición</a>
 			</div>
 
-
+			</div><!--  </box> -->
 		</div>
 
 	</div>
@@ -194,17 +195,6 @@ $(document).ready(function() {
 			$(".autor").addClass("active");
 		else
 			$(".autor").removeClass("active");
-	});
-});
-</script>
-<script>
-$(document).ready(function() {
-	jQuery(window).scroll(function () {
-		var threshold = 700;
-		if (jQuery(window).scrollTop() >= 1000)
-			$(".guia").addClass("active");
-		else
-			$(".guia").removeClass("active");
 	});
 });
 </script>

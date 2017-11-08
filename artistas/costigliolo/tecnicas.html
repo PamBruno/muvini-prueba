@@ -141,17 +141,19 @@
 
 					<img src="images/tecnica-pintura.png" alt="" class="">
 				</div>
+
+				<!-- guia que orienta al usuario para seguir la linealidad de las UD -->
+
+				<div class="guia">
+					<a class="" href="#"><i class="material-icons left">arrow_back</i>Rompecabezas</a>
+					<a href="#corriente-plastica" class="btn-floating"><i class="material-icons">arrow_upward</i></a>
+
+					<a class="" href="#"><i class="material-icons right">arrow_forward</i>Elementos de Composición</a>
+				</div>
+
 			</div><!--  </box> -->
 
-			<!-- guia que orienta al usuario para seguir la linealidad de las UD -->
-
-			<div class="col s12 m7 l9 guia">
-				<a class="" href="#"><i class="material-icons left">arrow_back</i>Rompecabezas</a>
-				<a href="#corriente-plastica" class="btn-floating"><i class="material-icons">arrow_upward</i></a>
-
-				<a class="" href="#"><i class="material-icons right">arrow_forward</i>Elementos de Composición</a>
-			</div>
-
+			
 
 		</div> <!--< /div.col.s12.m7.l9 >-->
 
@@ -213,17 +215,7 @@ $(document).ready(function() {
 	});
 });
 </script>
-<script>
-$(document).ready(function() {
-	jQuery(window).scroll(function () {
-		var threshold = 700;
-		if (jQuery(window).scrollTop() >= 1000)
-			$(".guia").addClass("active");
-		else
-			$(".guia").removeClass("active");
-	});
-});
-</script>
+
 
 <script>
 $(document).ready(function(){
