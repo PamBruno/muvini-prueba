@@ -124,7 +124,7 @@
 
 
 .mosaico {
-	@extend .z-depth-5;
+	// @extend .z-depth-5;
 
 }
 
@@ -162,6 +162,7 @@
 .container-mosaico {
 
 	width: 90%;
+	// border: 1px solid red;
 	position: relative;
 	height: auto;
 	margin: auto;

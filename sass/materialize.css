@@ -2001,7 +2001,7 @@ a {
 .z-depth-4, .modal {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
-.z-depth-5, .miniatura, .guia, .mosaico, .mosaico-imagen img {
+.z-depth-5, .guia, .miniatura, .mosaico-imagen img {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
 .hoverable {
@@ -5228,21 +5228,21 @@ a {
   .box-left h2 {
     text-transform: uppercase;
     color: white;
-    font-size: 2.2em;
+    font-size: 2.3em;
     font-weight: 700; }
     .box-left h2 + h3 {
       text-transform: capitalize;
       font-weight: 400;
-      font-size: 1.2em;
-      color: #00bfa5;
+      font-size: 1.3em;
+      color: #84C79F;
       margin-top: -0.8em; }
   .box-left h3 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #00bfa5; }
+    padding: 0.5em;
+    border-top: 1px solid #84C79F; }
   .box-left p {
     color: #999;
     font-weight: 400;
-    margin-top: -0.8em; }
+    margin-top: -1.2em; }
 
 .foto-autor {
   width: 100%;
@@ -5271,15 +5271,6 @@ a {
     box-shadow: -4px 0px 10px 0px rgba(0, 0, 0, 0.75); }
     .foto-autor .retrato img {
       height: 250px; }
-
-.miniatura {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  background: #15524D;
-  border-radius: 50px;
-  bottom: 10px;
-  left: calc(40% - 40px); }
 
 .autor-fixed {
   position: fixed;
@@ -5442,17 +5433,18 @@ a {
     align-content: center; }
     .box-mapa .mapa li {
       display: block;
-      height: 200px;
-      width: 230px;
-      transition: all .5s; }
+      height: 230px;
+      width: 280px;
+      transition: all .5s;
+      margin: 5px; }
       .box-mapa .mapa li:hover {
         background: #3D8A75;
         border-radius: 5px; }
       .box-mapa .mapa li a {
         display: block;
         margin: 5px;
-        height: 200px;
-        width: 230px;
+        height: 230px;
+        width: 280px;
         padding: 10px 20px;
         display: flex;
         flex-direction: column;
@@ -5466,8 +5458,8 @@ a {
           text-align: center;
           margin-top: 5px;
           color: white;
-          font-size: 1.2em;
-          font-weight: 300; }
+          font-size: 1.5em;
+          font-weight: 100; }
 
 .btn-modal {
   display: -webkit-box;
@@ -5501,39 +5493,54 @@ a {
       color: white !important;
       font-size: 1em !important; }
 
-.conejo-explorador {
-  position: fixed;
-  left: -30px;
-  bottom: 0;
-  z-index: 100;
-  width: 100%;
-  max-width: 200px;
-  height: 350px;
-  /* border: 1px solid red; */
-  overflow: hidden; }
-  .conejo-explorador .explorador {
-    width: 100%;
-    height: auto; }
-
-.conejo-pintor {
+.conejo-content {
   position: fixed;
   left: 30px;
   bottom: 0;
   z-index: 100;
   width: 100%;
-  max-width: 250px;
-  height: 430px;
-  /* border: 1px solid red; */
-  overflow: hidden; }
-  .conejo-pintor .pintor {
+  max-width: 200px;
+  height: 350px;
+  /* border: 1px solid red; */ }
+  .conejo-content .conejo {
     width: 100%;
-    height: auto;
+    height: auto; }
+  .conejo-content .pintor {
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH"; }
 
+.miniatura {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background: #032429;
+  border-radius: 50px;
+  bottom: 120px;
+  right: -40px;
+  z-index: -1; }
+
+@media only screen and (max-width: 992px) {
+  .box-mapa .mapa li {
+    height: 200px;
+    width: 230px; }
+    .box-mapa .mapa li a {
+      height: 200px;
+      width: 230px; }
+      .box-mapa .mapa li a img {
+        display: block;
+        width: 80%; } }
+@media only screen and (max-width: 600px) {
+  .box-mapa .mapa li {
+    height: auto;
+    width: 90%; }
+    .box-mapa .mapa li a {
+      height: auto;
+      width: 90%; }
+      .box-mapa .mapa li a img {
+        width: 70%; } }
 .ri-grid {
   margin: 30px auto 0;
   position: relative;
@@ -5920,5 +5927,29 @@ tbody {
       margin-top: -10px;
       left: -9px;
       top: 50%; } }
+#columns {
+  column-width: 230px;
+  column-gap: 10px;
+  width: 100%; }
+
+div#columns a {
+  background: #fafafa;
+  margin: 10px 8px;
+  padding: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+  cursor: pointer; }
+
+div#columns a img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+  margin-bottom: 5px; }
+
+div#columns:hover a:not(:hover) {
+  opacity: 0.2; }
 
 /*# sourceMappingURL=materialize.css.map */
