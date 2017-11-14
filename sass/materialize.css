@@ -3902,6 +3902,74 @@ button.btn-floating {
   border-radius: 0;
   will-change: bottom, opacity; }
 
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 18px;
+  border-radius: 16px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px; }
+  .chip > img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%; }
+  .chip .close {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 8px; }
+
+.chips {
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  box-shadow: none;
+  margin: 0 0 20px 0;
+  min-height: 45px;
+  outline: none;
+  transition: all .3s; }
+  .chips.focus {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a; }
+  .chips:hover {
+    cursor: text; }
+  .chips .chip.selected {
+    background-color: #26a69a;
+    color: #fff; }
+  .chips .input {
+    background: none;
+    border: 0;
+    color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 32px;
+    outline: 0;
+    margin: 0;
+    padding: 0 !important;
+    width: 120px !important; }
+  .chips .input:focus {
+    border: 0 !important;
+    box-shadow: none !important; }
+  .chips .autocomplete-content {
+    margin-top: 0; }
+
+.prefix ~ .chips {
+  margin-left: 3rem;
+  width: 92%;
+  width: calc(100% - 3rem); }
+
+.chips:empty ~ label {
+  font-size: 0.8rem;
+  transform: translateY(-140%); }
+
 .materialboxed {
   display: block;
   cursor: zoom-in;
@@ -5235,14 +5303,17 @@ a {
       font-weight: 400;
       font-size: 1.3em;
       color: #84C79F;
-      margin-top: -0.8em; }
+      margin-top: -0.5em; }
   .box-left h3 {
-    padding: 0.5em;
+    padding: 0.5em 0;
     border-top: 1px solid #84C79F; }
   .box-left p {
     color: #999;
     font-weight: 400;
     margin-top: -1.2em; }
+  .box-left .center a {
+    margin: 5px;
+    background: #15524D; }
 
 .foto-autor {
   width: 100%;
@@ -5541,6 +5612,99 @@ a {
       width: 90%; }
       .box-mapa .mapa li a img {
         width: 70%; } }
+/* puzzle - rompecabezas  */
+#puzzle-containment {
+  /* comments */
+  /* strings */
+  /* numeric */
+  /* Pure CSS */
+  /* required snapPuzzle styles */ }
+  #puzzle-containment::selection {
+    color: #fff;
+    background: #328efd; }
+  #puzzle-containment::-moz-selection {
+    color: #fff;
+    background: #328efd; }
+  #puzzle-containment figure {
+    padding: 0; }
+  #puzzle-containment .inline-code {
+    padding: 1px 5px;
+    background: #eee;
+    border-radius: 2px; }
+  #puzzle-containment pre {
+    padding: 15px 10px;
+    font-size: .9em;
+    color: #555;
+    background: #edf3f8; }
+  #puzzle-containment pre i {
+    color: #aaa; }
+  #puzzle-containment pre b {
+    font-weight: normal;
+    color: #cf4b25; }
+  #puzzle-containment pre em {
+    color: #0c59e9; }
+  #puzzle-containment .pure-button {
+    margin: 5px 0;
+    text-decoration: none !important; }
+  #puzzle-containment .button-lg {
+    margin: 5px 0;
+    padding: .65em 1.6em;
+    font-size: 105%; }
+  #puzzle-containment .snappuzzle-wrap {
+    position: relative;
+    display: block; }
+  #puzzle-containment .snappuzzle-pile {
+    position: relative; }
+  #puzzle-containment .snappuzzle-piece {
+    cursor: move; }
+  #puzzle-containment .snappuzzle-slot {
+    position: absolute;
+    background: #fff;
+    opacity: .8; }
+  #puzzle-containment .snappuzzle-slot-hover {
+    background: #eee; }
+
+.image-puzzle img {
+  width: 100%; }
+
+#imagen img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  filter: url("#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: Gray();
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#imagen img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none; }
+
+#puzzle_solved {
+  width: 90%;
+  margin: auto; }
+  #puzzle_solved .chip {
+    transition: 0.5s all; }
+    #puzzle_solved .chip:hover {
+      background: #B6E8B3; }
+  #puzzle_solved .btn, #puzzle_solved .btn-large, #puzzle_solved .btn-modal a span, .btn-modal a #puzzle_solved span {
+    margin: 5px;
+    background: #3D8A75; }
+
+/* fin puzzle - rompecabezas */
 .ri-grid {
   margin: 30px auto 0;
   position: relative;

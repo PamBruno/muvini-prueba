@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rompecabezas: José Pedro Costigliolo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="../../sass/materialize.css">
+
+
+</head>
+<body class="bg-content" onload="init();">
+	<header>
+		<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="../../institucional.html">Institucional</a></li>
+			<li><a href="../../quienes-somos.html">Quienes somos</a></li>
+			<li class="divider"></li>
+			<li><a href="../../contacto.html">Contacto</a></li>
+		</ul>
+		<nav class="grey darken-4">
+			<!-- LOGO MEDIO -->
+			<a href="../../index.html" class="brand-logo"><img class="logo-muvini" src="../../img/muvini-logo.png"></a>
+			<!--  boton menu mobile -->
+			<a href="#" data-activates="mobile-demo" class="button-collapse right">
+				<i class="material-icons">menu</i>
+			</a>
+			<div class="">
+				<ul class="right hide-on-med-and-down">
+					<li><a class="btn teal"  href="../../artistas.html">artistas</a></li>
+					<li><a class=""  href="../../educadores.html">Educadores</a></li>
+					<li><a href="../../mapa.html">mapa</a></li>
+					<li><a href="../../carteleta.html">Cartelera</a></li>
+					<li><a class="dropdown-button" href="#" data-activates="dropdown1">muvini<i class="material-icons right">arrow_downward</i> </a></li>
+					<!-- <li><a class="" href="favoritos.html"><i class="material-icons">favorite</i></a></li> -->
+				</ul>
+			</div>
+
+			<!-- menu mobile -->
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="../../artistas.html" class="">artistas</a></li>
+				<li><a class=""  href="../../educadores.html">Educadores</a></li>
+				<li class="divider"></li>
+				<li><a href="../../carteleta.html">carteleta</a></li>
+				<li><a href="../../mapa.html">mapa</a></li>
+				<li class="divider"></li>
+				<li><a href="#">muvini<i class="material-icons right">arrow_downward</i> </a>
+					<ul class="collapsible" data-collapsible="accordion">
+						<li><a href="../../institucional.html">Institucional</a></li>
+						<li><a href="../../quienes-somos.html">quienes somos</a></li>
+						<li><a href="../../contacto.html">Contacto</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+</header>
+<!-- autor fixed  -->
+<!-- datos de UD y autor perteneciente fixed para pantallas medias y grandes-->
+<main class="">
+	<div class="row">
+		<div class="col s12  l3">
+			<div class="box-left">
+
+				<!-- datos de UD y autor perteneciente -->
+				<h2>Rompecabezas</h2>
+				<h3>José Pedro Constigliolo</h3>
+				<p>1902-1985</p>
+
+				<div class="foto-autor">
+					<div class="obra">
+						<img src="images/analisis-4.png">
+					</div>
+					<div class="retrato">
+						<img src="img/retrato-costi.png">
+					</div>
+					<img src="img/icons/1.svg" alt="" class="miniatura">
+				</div>
+
+				<div class="col s12 m12 l12 center">
+
+					<a href="" class="btn-floating primario-muvini"><i class="material-icons">print</i></a>
+					<a href="" class="btn-floating primario-muvini"><i class="material-icons">email</i></a>
+					<a href="mapa.html" class="btn primario-muvini"><i class="material-icons left">arrow_back</i>Volver</a>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- material informativo corresponde a cada UD -->
+
+		<div class="col s12  l9 box-mapa padding-box" id="puzzle-containment">
+			<div class="col s12 m7 image-puzzle">
+					<img id="source_image" class="" src="images/galeria/10.jpg">
+			</div>
+			<div class="col s12 m5" id="pile">  <!-- aca se ponen las piezas -->
+		
+					<div id="puzzle_solved" class="center">
+						<h2>Bien Hecho!!</h2>
+						<a class="btn restart-puzzle" data-grid="2">Intentalo de Nuevo</a>
+						<a class="btn restart-puzzle" data-grid="2">Elige otra obra</a>
+						<br><br>
+						<a href="#" class="chip restart-puzzle" data-grid="4">16 Piezas</a>
+						&nbsp; <a href="#" class="chip restart-puzzle" data-grid="3">9 Piezas</a>
+						&nbsp; <a href="#" class="chip restart-puzzle" data-grid="2">4 Piezas</a>
+					</div>	
+			</div>
+
+			<!-- guia -->
+			<!-- conejo -->
+		</div>
+	</main>
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../../js/bin/materialize.min.js"></script>
+	<script src="../../js/bin/jquery.snap-puzzle.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		jQuery(window).scroll(function () {
+			var threshold = 700;
+			if (jQuery(window).scrollTop() >= 1000)
+				$(".guia").addClass("active");
+			else
+				$(".guia").removeClass("active");
+		});
+	});
+	</script>
+
+	<script>
+	$(".button-collapse").sideNav();
+	$(".dropdown-button").dropdown();
+	</script>
+
+	
+	<script>
+	// jQuery UI Touch Punch 0.2.3 - must load after jQuery UI
+	// enables touch support for jQuery UI
+	!function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);
+
+	function start_puzzle(x){
+		$('#puzzle_solved').hide();
+		$('#source_image').snapPuzzle({
+			rows: x, columns: x,
+			pile: '#pile',
+			containment: '#puzzle-containment',
+			onComplete: function(){
+				$('#source_image').fadeOut(150).fadeIn();
+				$('#puzzle_solved').show();
+			}
+		});
+	}
+
+	$(function(){
+		$('#pile').height($('#source_image').height());
+		start_puzzle(2);
+
+		$('.restart-puzzle').click(function(){
+			$('#source_image').snapPuzzle('destroy');
+			start_puzzle($(this).data('grid'));
+		});
+
+		$(window).resize(function(){
+			$('#pile').height($('#source_image').height());
+			$('#source_image').snapPuzzle('refresh');
+		});
+	});
+
+	</script>
+
+
+
+
+</body>
+</html>
