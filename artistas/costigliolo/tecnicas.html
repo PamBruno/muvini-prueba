@@ -76,7 +76,7 @@
 			<img src="img/icons/7.svg" alt="" class="miniatura">
 		</div>
 
-		<div class="col s12 m12 l12">
+		<div class="col s12 m12 l12 center">
 
 			<a href="" class="btn-floating teal"><i class="material-icons">print</i></a>
 			<a href="" class="btn-floating teal"><i class="material-icons">email</i></a>
@@ -106,8 +106,7 @@
 					<img src="img/icons/7.svg" alt="" class="miniatura">
 				</div>
 
-				<div class="col s12 m12 l12">
-
+				<div class="col s12 m12 l12 center">
 					<a href="" class="btn-floating teal"><i class="material-icons">print</i></a>
 					<a href="" class="btn-floating teal"><i class="material-icons">email</i></a>
 					<a href="mapa.html" class="btn"><i class="material-icons left">arrow_back</i> Volver</a>
@@ -121,18 +120,18 @@
 				<p>En primer lugar se halla la pintura. Y en segundo lugar, el diseño gráfico. </p>
 				<p>Existen dos más, el muralismo que aplicó en dos ocasiones. Y la técnica vitral que estudió en Europa pero que no llegó a concretar en la realidad. Observemos la práctica de dos de estas técnicas:</p>
 
-				<ul id="tabs-swipe-demo" class="tabs grey lighten-4">
+				<ul id="tabs-swipe-demo" class="tabs transparent">
 					<li class="tab"><a href="#test-swipe-1">Mural</a></li>
 					<li class="tab"><a class="" href="#test-swipe-2">Pintura</a></li>
 				</ul>
-				<div id="test-swipe-1" class="col s12 ">
+				<div id="test-swipe-1" class="col s12 contentTab">
 					<h2>Mural</h2>
 					<p>El mural es una imagen que utiliza como soporte un muro o pared, por eso los murales son de grandes dimensiones y, en general, se encuentran en edificios y espacios públicos.</p>
 					<p>Tienen una intención social, es decir, se busca que sean vistos por muchas personas. Costigliolo consiguió realizar dos murales. Compuestos por teselas de cerámica vidriada. </p>
 					<p> Las teselas son pequeñas piedras cuadradas con las que se arman imágenes, como si fuera un rompecabezas. Las obras realizadas con teselas se llaman mosaicos.</p>
 					<img src="images/tecnica-mural.png" alt="" class="">
 				</div>
-				<div id="test-swipe-2" class="col s12">
+				<div id="test-swipe-2" class="col s12 contentTab">
 					<h2>Pintura</h2>
 					<p>Costigliolo en sus trabajos aplica la pintura de forma muy rigurosa ya que sus dibujos geométricos le exigen total precisión. </p>
 					<p>En su obra, especialmente la que inicia a partir del año 1951, como se puede ver en la Cronología visual, son notorias la exactitud de su línea y su habilidad para pintar espacios lisos. </p>
@@ -204,18 +203,6 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="../../js/bin/materialize.min.js"></script>
-<script>
-$(document).ready(function() {
-	jQuery(window).scroll(function () {
-		var threshold = 700;
-		if (jQuery(window).scrollTop() >= 300)
-			$(".autor-fixed").addClass("active");
-		else
-			$(".autor-fixed").removeClass("active");
-	});
-});
-</script>
-
 
 <script>
 $(document).ready(function(){

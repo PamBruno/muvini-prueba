@@ -1604,6 +1604,34 @@
 .transparent-text {
   color: transparent !important; }
 
+.bg-primario-muvini {
+  background: #3D8A75; }
+
+.text-primario-muvini {
+  color: #3D8A75; }
+
+.bg-semiclaro-muvini {
+  background: #84C79F; }
+
+.text-semiclaro-muvini {
+  color: #84C79F; }
+
+.bg-oscuro-muvini {
+  background: #032429; }
+  .bg-oscuro-muvini:hover, .bg-oscuro-muvini:active, .bg-oscuro-muvini:focus {
+    background: #2b1268; }
+
+.text-oscuro-muvini {
+  color: #032429; }
+
+.bg-claro-muvini {
+  background: #B6E8B3; }
+  .bg-claro-muvini:hover, .bg-claro-muvini:active, .bg-claro-muvini:focus {
+    background: #B6E8B3; }
+
+.text-claro-muvini {
+  color: #B6E8B3; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -1995,7 +2023,7 @@ a {
 .z-depth-2, .box .gallery-img {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-3, .box .modal-img, .box-mapa .mapa li:hover, .btn-modal a img, .search {
+.z-depth-3, .tabs .indicator, .box .modal-img, .box-mapa .mapa li:hover, .btn-modal a img, .search {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
 
 .z-depth-4, .modal {
@@ -3406,6 +3434,7 @@ small {
     transform: scale(1); }
 
 .tabs {
+  border-bottom: 3px solid #84C79F;
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -3438,29 +3467,38 @@ small {
     line-height: 48px;
     height: 48px;
     padding: 0;
-    margin: 0;
+    margin: 0 3px;
     text-transform: uppercase; }
+    .tabs .tab:first-child {
+      margin: 0; }
     .tabs .tab a {
-      color: rgba(238, 110, 115, 0.7);
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: rgba(153, 153, 153, 0.7);
       display: block;
+      background-color: #fafafa;
+      border-radius: 5px 5px 0 0;
       width: 100%;
       height: 100%;
-      padding: 0 24px;
-      font-size: 14px;
+      padding: 0 30px;
+      font-size: 16px;
+      font-weight: 700;
       text-overflow: ellipsis;
       overflow: hidden;
       transition: color .28s ease; }
       .tabs .tab a:hover, .tabs .tab a.active {
         background-color: transparent;
-        color: #ee6e73; }
+        color: #3D8A75; }
     .tabs .tab.disabled a, .tabs .tab.disabled a:hover {
-      color: rgba(238, 110, 115, 0.7);
+      color: rgba(61, 138, 117, 0.7);
       cursor: default; }
   .tabs .indicator {
     position: absolute;
     bottom: 0;
-    height: 2px;
-    background-color: #f6b2b5;
+    height: 100%;
+    background-color: #84C79F;
+    z-index: -1;
+    border-radius: 5px 5px 0 0;
     will-change: left, right; }
 
 @media only screen and (max-width: 992px) {
@@ -5313,7 +5351,7 @@ a {
     margin-top: -1.2em; }
   .box-left .center a {
     margin: 5px;
-    background: #15524D; }
+    background: #15524D !important; }
 
 .foto-autor {
   width: 100%;
@@ -5510,12 +5548,12 @@ a {
       margin: 5px; }
       .box-mapa .mapa li:hover {
         background: #3D8A75;
-        border-radius: 5px; }
+        border-radius: 8px; }
       .box-mapa .mapa li a {
         display: block;
-        margin: 5px;
         height: 230px;
-        width: 280px;
+        width: 250px;
+        margin: 5px auto;
         padding: 10px 20px;
         display: flex;
         flex-direction: column;
@@ -5524,12 +5562,12 @@ a {
         align-content: center; }
         .box-mapa .mapa li a img {
           display: block;
-          width: 70%; }
+          width: 80%; }
         .box-mapa .mapa li a p {
           text-align: center;
           margin-top: 5px;
           color: white;
-          font-size: 1.5em;
+          font-size: 1.3em;
           font-weight: 100; }
 
 .btn-modal {
@@ -5606,10 +5644,12 @@ a {
 @media only screen and (max-width: 600px) {
   .box-mapa .mapa li {
     height: auto;
-    width: 90%; }
+    width: 80%;
+    margin: 10px auto; }
     .box-mapa .mapa li a {
       height: auto;
-      width: 90%; }
+      width: 90%;
+      margin: auto; }
       .box-mapa .mapa li a img {
         width: 70%; } }
 /* puzzle - rompecabezas  */

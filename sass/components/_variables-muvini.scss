@@ -320,3 +320,57 @@ $collection-line-height: 1.5rem !default;
 // ==========================================================================
 
 $progress-bar-color: $secondary-color !default;
+
+// 25. Colores Muvini
+// ==========================================================================
+//  paleta colores
+
+$claro-muvini:			#B6E8B3;
+$semiclaro-muvini:		#84C79F;
+
+$primario-muvini: 		#3D8A75;
+
+$semioscuro-muvini:		#15524D;
+$oscuro-muvini: 		#032429;
+
+
+.bg-primario-muvini{
+	background: $primario-muvini;
+}
+.text-primario-muvini {
+	color: $primario-muvini;
+}
+
+.bg-semiclaro-muvini{
+	background: $semiclaro-muvini;
+}
+.text-semiclaro-muvini {
+	color: $semiclaro-muvini;
+}
+
+.bg-oscuro-muvini{
+	background: $oscuro-muvini;
+	&:hover,
+	&:active,
+	&:focus {
+		background: #2b1268;
+	}
+}
+.text-oscuro-muvini {
+	color: $oscuro-muvini;
+}
+
+
+.bg-claro-muvini{
+	background: $claro-muvini;
+	&:hover,
+	&:active,
+	&:focus {
+		background: $claro-muvini;
+	}
+
+}
+.text-claro-muvini {
+	color: $claro-muvini;
+}
+

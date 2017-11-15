@@ -1,4 +1,7 @@
 .tabs {
+  border-bottom: 3px solid $semiclaro-muvini;
+
+
   &.tabs-transparent {
     background-color: transparent;
 
@@ -24,8 +27,9 @@
     .tab {
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+
     }
   }
 
@@ -44,39 +48,61 @@
     line-height: 48px;
     height: 48px;
     padding: 0;
-    margin: 0;
+    margin: 0 3px;
     text-transform: uppercase;
+    &:first-child {
+      margin: 0;
+    }
 
     a {
-      &:hover,
-      &.active {
-        background-color: transparent;
-        color: $tabs-text-color;
-      }
-
-      color: rgba($tabs-text-color, .7);
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: rgba(#999, .7);
       display: block;
+      background-color: #fafafa;
+      border-radius: 5px 5px 0 0;
       width: 100%;
       height: 100%;
-      padding: 0 24px;
-      font-size: 14px;
+      padding: 0 30px;
+      font-size: 16px;
+      font-weight: 700;
       text-overflow: ellipsis;
       overflow: hidden;
       transition: color .28s ease;
+      &:hover,
+      &.active {
+        background-color: transparent;
+        color: $primario-muvini;
+      }
     }
 
     &.disabled a,
     &.disabled a:hover {
-      color: rgba($tabs-text-color, .7);
+      color: rgba($primario-muvini, .7);
       cursor: default;
+
     }
   }
   .indicator {
     position: absolute;
     bottom: 0;
-    height: 2px;
-    background-color: $tabs-underline-color;
+    height: 100%;
+    background-color: $semiclaro-muvini;
+    z-index: -1;
+    border-radius: 5px 5px 0 0;
     will-change: left, right;
+      @extend .z-depth-3;
+  }
+}
+
+.contentTab {
+  // background: #fafafa;
+  // padding: 1em 2em;
+  // @extend .z-depth-1;
+  // border-radius: 0 0 8px 8px;
+
+  h2 {
+    // text-align: center;
   }
 }
 

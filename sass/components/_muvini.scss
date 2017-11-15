@@ -141,7 +141,7 @@ a {
 	.center {
 		a {
 			margin: 5px;
-			background: $semioscuro-muvini;
+			background: $semioscuro-muvini !important;
 		}
 	}
 
@@ -416,13 +416,13 @@ a {
 			&:hover {
 				@extend .z-depth-3;
 				background: $primario-muvini;
-				border-radius: 5px;
+				border-radius: 8px;
 			}
 			a{
 				display: block;
-				margin: 5px;
 				height: 230px;
-				width: 280px;
+				width: 250px;
+				margin: 5px auto;
 				padding: 10px 20px;
 				display: flex;
 				flex-direction: column;
@@ -431,13 +431,13 @@ a {
 				align-content: center;
 				img {
 					display: block;
-					width: 70%;
+					width: 80%;
 				}
 				p {
 					text-align: center;
 					margin-top: 5px;
 					color: white;
-					font-size: 1.5em;
+					font-size: 1.3em;
 					// font-family: 'Merriweather', georgia, Sans-serif;
 					font-weight: 100;
 
@@ -570,12 +570,13 @@ a {
     	.mapa {
     		li {
     			height: auto;
-    			width: 90%;
+    			width: 80%;
+    			margin: 10px auto;
+
     			a{
     				height: auto;
     				width: 90%;
-    				
-    				
+    				margin:auto;
     				img {
     					width: 70%;
     				}
@@ -666,7 +667,7 @@ a {
 
 		}
 	}
-	
+
 	.btn{
 		margin: 5px;
 		background: $primario-muvini;
