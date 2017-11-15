@@ -91,19 +91,15 @@
     z-index: -1;
     border-radius: 5px 5px 0 0;
     will-change: left, right;
-      @extend .z-depth-3;
+    @extend .z-depth-3;
   }
 }
 
 .contentTab {
-  // background: #fafafa;
-  // padding: 1em 2em;
-  // @extend .z-depth-1;
-  // border-radius: 0 0 8px 8px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid $semiclaro-muvini;
+  
 
-  h2 {
-    // text-align: center;
-  }
 }
 
 // Fixed sideNav hide on smaller

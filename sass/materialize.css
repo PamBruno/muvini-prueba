@@ -3501,6 +3501,10 @@ small {
     border-radius: 5px 5px 0 0;
     will-change: left, right; }
 
+.contentTab {
+  padding-bottom: 50px;
+  border-bottom: 3px solid #84C79F; }
+
 @media only screen and (max-width: 992px) {
   .tabs {
     display: flex; }
@@ -5285,34 +5289,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* Merriweather */
 /* Alegreya */
 /* Fira Sans */
-.bg-primario-muvini {
-  background: #3D8A75; }
-
-.text-primario-muvini {
-  color: #3D8A75; }
-
-.bg-semiclaro-muvini {
-  background: #84C79F; }
-
-.text-semiclaro-muvini {
-  color: #84C79F; }
-
-.bg-oscuro-muvini {
-  background: #032429; }
-  .bg-oscuro-muvini:hover, .bg-oscuro-muvini:active, .bg-oscuro-muvini:focus {
-    background: #2b1268; }
-
-.text-oscuro-muvini {
-  color: #032429; }
-
-.bg-claro-muvini {
-  background: #B6E8B3; }
-  .bg-claro-muvini:hover, .bg-claro-muvini:active, .bg-claro-muvini:focus {
-    background: #B6E8B3; }
-
-.text-claro-muvini {
-  color: #B6E8B3; }
-
 body {
   background: url(../img/bg_muvini.png) repeat top left #484848; }
 
